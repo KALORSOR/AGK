@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Date</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/currentdate.js"></script>
+    <script type="text/javascript" src="currentdate.js"></script>
+</head>
+<body onLoad="renderTime();">
+<div id="clockDisplay" class="container"></div> 
+
+<p>Current Date is :
+    <span class="container"></span>
+    <button onclick="getCurrentDate()">Get Current Date</button>
+    <script type="text/javascript">
+    function getCurrentDate()
+    {let date = new Date().toDateString();
+        document.querySelector(".container").textContent=date; }
+        </script>
+
+
+
+</body>
+</html>
